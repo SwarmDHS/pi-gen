@@ -63,7 +63,7 @@ EOF
 				bash
 			fi
 			RC=0
-			quilt push -a || RC=$?
+			# quilt push -a --leave-rejects || RC=$?
 			case "$RC" in
 				0|2)
 					;;
